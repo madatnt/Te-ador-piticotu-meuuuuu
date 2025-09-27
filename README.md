@@ -66,6 +66,8 @@ Multumesc ca faci parte din viata meaaa te iubiiii cel mai multtt
         <div class="heart"></div>
         <div class="heart"></div>
         <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
     </div>
 
 </body>
