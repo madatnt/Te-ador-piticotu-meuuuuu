@@ -7,7 +7,7 @@ Multumesc ca faci parte din viata meaaa te iubiiii cel mai multtt
     <title>Te iubesc</title>
     <style>
         body {
-            background-color: #fff0f5;
+            background-color: #ffc0cb; /* fundal roz intens */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -16,17 +16,22 @@ Multumesc ca faci parte din viata meaaa te iubiiii cel mai multtt
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
+            overflow: hidden;
         }
 
         h1 {
             color: #d63384;
-            font-size: 2.5em;
-            margin-bottom: 40px;
+            font-size: 3em;
+            margin-bottom: 60px;
+            max-width: 90%;
         }
 
         .hearts {
             display: flex;
-            gap: 30px;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            max-width: 800px;
         }
 
         .heart {
@@ -35,6 +40,7 @@ Multumesc ca faci parte din viata meaaa te iubiiii cel mai multtt
             background-color: red;
             position: relative;
             transform: rotate(-45deg);
+            animation: pulse 1.2s infinite ease-in-out;
         }
 
         .heart::before,
@@ -56,6 +62,15 @@ Multumesc ca faci parte din viata meaaa te iubiiii cel mai multtt
             left: 30px;
             top: 0;
         }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1) rotate(-45deg);
+            }
+            50% {
+                transform: scale(1.3) rotate(-45deg);
+            }
+        }
     </style>
 </head>
 <body>
@@ -63,6 +78,8 @@ Multumesc ca faci parte din viata meaaa te iubiiii cel mai multtt
     <h1>Te iubesc și te ador, piticotu’ meu 💖</h1>
 
     <div class="hearts">
+        <div class="heart"></div>
+        <div class="heart"></div>
         <div class="heart"></div>
         <div class="heart"></div>
         <div class="heart"></div>
